@@ -1,0 +1,73 @@
+/* Navbar */
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 15px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.nav-ul .bg-btn-success {
+  width: 150px !important;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.logo-nav {
+  text-align: center;
+  font-size: 2em;
+  height: 7vh;
+}
+
+.logo-nav a, p {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-ul {
+  padding: 15px;
+}
+
+.toggle {
+  display: none;
+}
+
+/* End Navbar Style */
+
+@media screen and (max-width: 599px) {
+  .logo-nav {
+    height: 5vh;
+  }
+  .logo-nav a, p {
+    font-size: .9em;
+  }
+  .toggle {
+    display: inline;
+  }
+  .toggle button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2.4em;
+    cursor: pointer;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .sidebar {
+    background-color: #fffffd;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+  }
+  .sidebar .bg-btn-success {
+    width: 165px;
+    margin-top: 5px;
+  }
+}

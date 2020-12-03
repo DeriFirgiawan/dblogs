@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  color: rgb(20, 20, 20);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+/* More Style */
+
+.bg-btn-black, .bg-btn-success {
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 8px;
+  padding: 5px;
+  width: 125px;
+}
+
+.bg-btn-black {
+  background-color: black;
+}
+
+.bg-btn-success {
+  background-color: rgb(16, 167, 16);
+  color: white !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.bg-btn-success:active {
+  box-shadow: 0 0 0 white;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 45px 0 45px;
+}
+
+.justi-ween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.list-cont {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.content-body {
+  color: rgb(43, 40, 40);
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.jumbotron {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+  padding: 20px;
+}
+
+/* Style Form */
+
+.form-control label {
+  display: block;
+}
+
+.form-control input, textarea {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  min-height: 2.618em;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.form-control input:focus {
+  border: 1px solid #9fb1cc;
+  outline: #9fb1cc;
+  box-shadow: 0 4px 9px 0 #9fb1cc;
+}
+
+.create-post {
+  padding: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    margin: 0 25px 0 25px;
+  }
+  .bt-btn-black {
+    padding: 7px;
+    text-align: center;
+  }
+}
