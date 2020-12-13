@@ -21,33 +21,20 @@ class CreatePostPage extends React.Component {
     }
   }
 
-  // GET RestAPI
-  getDataApi = () => {
-    axios.get('http://localhost:3004/posts?_sort=id&_order=desc')
-    .then(result => {
-      this.setState({post: result.data})
-    })
-  }
-
   // Handle Input and update state
   handleInputForm = (event) => {
     let formBlogPostNew = { ...this.state.formBlogPost }
-    let idTime = event.timeStamp
-    formBlogPostNew['id'] = idTime
+    let timeStamp = new Date().getTime()
+    formBlogPostNew['id'] = timeStamp
     formBlogPostNew[event.target.name] = event.target.value
     this.setState({
       formBlogPost: formBlogPostNew
     })
   }
-
-  componentWillUnmount() {
-    this.getDataApi()
-  }
   // POST data state to RestAPI
   postToApi = () => {
     axios.post('http://localhost:3004/posts', this.state.formBlogPost)
       .then(result => {
-        this.getDataApi()
         this.setState({
           formBlogPost: {
             id: 1,

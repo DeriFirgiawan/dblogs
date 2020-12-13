@@ -15,9 +15,16 @@ button {
   outline: none;
 }
 
+.action {
+  position: relative;
+  left: 60em;
+  bottom: 30px;
+  width: 250px;
+}
+
 /* More Style */
 
-.bg-btn-black, .bg-btn-success {
+.bg-btn-black, .bg-btn-success, .bg-btn-danger {
   border-top-left-radius: 7px;
   border-bottom-right-radius: 8px;
   padding: 5px;
@@ -30,6 +37,13 @@ button {
 
 .bg-btn-success {
   background-color: rgb(16, 167, 16);
+  color: white !important;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.bg-btn-danger {
+  background-color: rgb(219, 48, 48);
   color: white !important;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -97,6 +111,68 @@ button {
 
 .create-post {
   padding: 20px;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-inner {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  left: 0;
+  width: 480px;
+  padding-bottom: 60px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.modal-header {
+  height: 8px;
+  width: 100%;
+  margin-bottom: 60px;
+  border-radius: 8px 8px 0 0;
+  background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg");
+}
+
+.modal-introduction {
+  color: #5876a3;
+  width: 384px;
+  line-height: 32px;
+  text-align: left;
+  margin: 36px auto 40px;
+}
+
+.modal-introduction h2 {
+  text-align: center;
+}
+
+.modal-close-btn {
+  border-radius: 100%;
+  color: white;
+  border: 0;
+  background-color: red;
+  cursor: pointer;
+  position: relative;
+  padding: 6px;
+  font-size: 1rem;
+  left: 25em;
+}
+
+.modal-button {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 50px;
 }
 
 @media screen and (max-width: 599px) {
